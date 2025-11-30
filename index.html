@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innova Food G.C - Instituto de Capacitaciones Alimentarias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4d4341',
+                        secondary: '#3a3230',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(50px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeInUp 0.8s ease-out',
+                        'fade-in-delay': 'fadeInUp 0.8s ease-out 0.2s backwards',
+                        'fade-in-delay-2': 'fadeInUp 0.8s ease-out 0.4s backwards',
+                        'fade-in-delay-3': 'fadeInUp 0.8s ease-out 0.6s backwards'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#4d4341]">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <img src="images/innovaImage.png" alt="Innova Food G.C Logo" class="w-16 h-16 mr-3 object-contain">
+                    <h1 class="text-2xl font-bold text-[#4d4341]">Innova Food G.C</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#inicio" class="text-[#4d4341] hover:text-[#3a3230] transition duration-300 font-semibold">Inicio</a>
+                    <a href="#nosotros" class="text-[#4d4341] hover:text-[#3a3230] transition duration-300 font-semibold">Nosotros</a>
+                    <a href="#servicios" class="text-[#4d4341] hover:text-[#3a3230] transition duration-300 font-semibold">Servicios</a>
+                    <a href="#cursos" class="text-[#4d4341] hover:text-[#3a3230] transition duration-300 font-semibold">Material Educativo</a>
+                    <a href="#blog" class="text-[#4d4341] hover:text-[#3a3230] transition duration-300 font-semibold">Sabías Que</a>
+                    <a href="#videos" class="text-[#4d4341] hover:text-[#3a3230] transition duration-300 font-semibold">Videos</a>
+                    <a href="#contacto" class="text-[#4d4341] hover:text-[#3a3230] transition duration-300 font-semibold">Contacto</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-[#4d4341]">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2">
+                <a href="#inicio" class="block px-3 py-2 text-[#4d4341] hover:bg-gray-100 rounded font-semibold">Inicio</a>
+                <a href="#nosotros" class="block px-3 py-2 text-[#4d4341] hover:bg-gray-100 rounded font-semibold">Nosotros</a>
+                <a href="#servicios" class="block px-3 py-2 text-[#4d4341] hover:bg-gray-100 rounded font-semibold">Servicios</a>
+                <a href="#cursos" class="block px-3 py-2 text-[#4d4341] hover:bg-gray-100 rounded font-semibold">Material Educativo</a>
+                <a href="#blog" class="block px-3 py-2 text-[#4d4341] hover:bg-gray-100 rounded font-semibold">Sabías Que</a>
+                <a href="#videos" class="block px-3 py-2 text-[#4d4341] hover:bg-gray-100 rounded font-semibold">Videos</a>
+                <a href="#contacto" class="block px-3 py-2 text-[#4d4341] hover:bg-gray-100 rounded font-semibold">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Section -->
+    <section id="inicio" class="pt-20">
+        <div class="carousel-container relative overflow-hidden">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active">
+                <div class="relative h-screen">
+                    <img src="images/ingenieria.jpg" alt="Laboratorio Alimentario" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-[#4d4341]/80 via-[#4d4341]/60 to-transparent"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white px-4 max-w-5xl">
+                            <img src="images/innovaImage.png" alt="Innova Food G.C" class="w-32 h-32 mx-auto mb-6 object-contain bg-white rounded-full p-2">
+                            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">¡Bienvenidos a Innova Food G.C!</h1>
+                            <p class="text-xl md:text-3xl mb-4 animate-fade-in-delay">
+                                <strong>Instituto de Capacitaciones Profesionales</strong>
+                            </p>
+                            <p class="text-lg md:text-xl mb-8 animate-fade-in-delay-2">
+                                "Hacerlo tú mismo es mejor" - Especializado en el sector alimentario
+                            </p>
+                            <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-delay-3">
+                                <a href="#cursos" class="bg-[#4d4341] hover:bg-[#3a3230] text-white px-8 py-4 rounded-lg text-lg font-semibold transition duration-300 shadow-lg transform hover:scale-105">
+                                    <i class="fas fa-graduation-cap mr-2"></i>Ver Material
+                                </a>
+                                <a href="#contacto" class="bg-white text-[#4d4341] hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition duration-300 shadow-lg transform hover:scale-105">
+                                    <i class="fas fa-phone mr-2"></i>Contáctanos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <div class="relative h-screen">
+                    <img src="images/ingenieria2.jpg" alt="Control de Calidad" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#3a3230]/85 via-[#4d4341]/50 to-black/40"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white px-4 max-w-5xl">
+                            <i class="fas fa-flask text-6xl md:text-8xl mb-6 text-white"></i>
+                            <h2 class="text-4xl md:text-6xl font-bold mb-6">Calidad e Inocuidad Alimentaria</h2>
+                            <p class="text-xl md:text-2xl mb-8">
+                                Desarrollo de productos alimentarios innovadores, optimizando procesos para garantizar calidad e inocuidad alimentaria
+                            </p>
+                            <a href="#servicios" class="bg-white text-[#4d4341] hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition duration-300 shadow-lg inline-block transform hover:scale-105">
+                                <i class="fas fa-arrow-right mr-2"></i>Nuestros Servicios
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+                <div class="relative h-screen">
+                    <img src="images/ingenieroa3.jpg" alt="Producción Alimentaria" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-bl from-transparent via-[#4d4341]/70 to-[#3a3230]/90"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white px-4 max-w-5xl">
+                            <i class="fas fa-users text-6xl md:text-8xl mb-6 text-white"></i>
+                            <h2 class="text-4xl md:text-6xl font-bold mb-6">Capacitación Profesional</h2>
+                            <p class="text-xl md:text-2xl mb-8">
+                                Más de 500 estudiantes capacitados con certificaciones reconocidas en BPM, HACCP y gestión de calidad
+                            </p>
+                            <a href="#blog" class="bg-[#4d4341] hover:bg-[#3a3230] text-white px-8 py-4 rounded-lg text-lg font-semibold transition duration-300 shadow-lg inline-block transform hover:scale-105">
+                                <i class="fas fa-lightbulb mr-2"></i>Sabías Que
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+                <div class="relative h-screen">
+                    <img src="images/ingenieria2.jpg" alt="Investigación Alimentaria" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-tl from-[#4d4341]/90 via-black/50 to-[#3a3230]/70"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white px-4 max-w-5xl">
+                            <i class="fas fa-microscope text-6xl md:text-8xl mb-6 text-white"></i>
+                            <h2 class="text-4xl md:text-6xl font-bold mb-6">Tecnología e Innovación</h2>
+                            <p class="text-xl md:text-2xl mb-8">
+                                Metodología teórica para la formación integral de profesionales del sector alimentario
+                            </p>
+                            <a href="#nosotros" class="bg-white text-[#4d4341] hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition duration-300 shadow-lg inline-block transform hover:scale-105">
+                                <i class="fas fa-info-circle mr-2"></i>Conoce Más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles del carrusel -->
+            <button class="carousel-btn carousel-prev" onclick="carouselNav(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-next" onclick="carouselNav(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(0)"></span>
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="container mx-auto px-4" style="padding-left: 2cm; padding-right: 2cm;">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#4d4341] mb-4">Sobre Nosotros</h2>
+                <div class="w-24 h-1 bg-[#4d4341] mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Somos un <strong class="text-[#4d4341]">centro de capacitaciones alimentarias</strong> comprometido con la formación de profesionales de excelencia en el sector alimentario.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold text-[#4d4341] mb-6">Nuestra Experiencia</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        En <strong class="text-[#4d4341]">Innova Food G.C.</strong> contamos con <strong class="text-[#4d4341]">5 años de experiencia</strong> en el sector alimentario, ofreciendo servicios especializados en capacitación, asesoría y cumplimiento de normativas sanitarias.
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Desde el <strong class="text-[#4d4341]">2020</strong> hemos acompañado a diversas empresas y profesionales del país en la mejora de sus procesos, garantizando la inocuidad y calidad de los alimentos que producen.
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Durante este tiempo, hemos capacitado a más de <strong class="text-[#4d4341]">700 estudiantes</strong>, formando personal competente en Buenas Prácticas de Manufactura (BPM), manipulación higiénica de alimentos e inocuidad alimentaria.
+                    </p>
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-[#4d4341]">
+                        <h4 class="font-bold text-[#4d4341] mb-2">Nuestro Compromiso</h4>
+                        <p class="text-gray-700">"Hacerlo tú mismo es mejor" - Transformar la industria alimentaria a través de la educación de calidad, cumplimiento normativo y la innovación constante.</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-award text-[#4d4341] text-3xl mr-4"></i>
+                            <h4 class="text-xl font-bold text-[#4d4341]">Certificaciones Reconocidas</h4>
+                        </div>
+                        <p class="text-gray-600">Programas certificados avalados por instituciones reconocidas</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-users text-[#4d4341] text-3xl mr-4"></i>
+                            <h4 class="text-xl font-bold text-[#4d4341]">Instructores Expertos</h4>
+                        </div>
+                        <p class="text-gray-600">Profesionales con  experiencia en la industria alimentaria</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-flask text-[#4d4341] text-3xl mr-4"></i>
+                            <h4 class="text-xl font-bold text-[#4d4341]">Práctica Aplicada</h4>
+                        </div>
+                        <p class="text-gray-600">Para la valoración de productos alimentarios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="py-16 bg-[#4d4341] text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-5xl font-bold mb-2">700+</div>
+                    <div class="text-gray-300">Estudiantes Capacitados</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">8+</div>
+                    <div class="text-gray-300">Servicios Especializados</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">5+</div>
+                    <div class="text-gray-300">Años de Experiencia</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">98%</div>
+                    <div class="text-gray-300">Satisfacción</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4" style="padding-left: 2cm; padding-right: 2cm;">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#4d4341] mb-4">Nuestros Servicios</h2>
+                <div class="w-24 h-1 bg-[#4d4341] mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Soluciones integrales para el sector alimentario
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Capacitaciones Alimentarias -->
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden hover:shadow-3xl transition duration-300 flex flex-col">
+                    <img src="images/Capacitacion.png" alt="Capacitaciones Alimentarias" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-chalkboard-teacher text-[#4d4341] text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold text-[#4d4341]">Capacitaciones Alimentarias</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Cursos permanentes y actualizados diseñados para cumplir con la normativa ecuatoriana.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>✓ BPM y manipulación higiénica</li>
+                            <li>✓ Inocuidad alimentaria</li>
+                            <li>✓ Certificación válida y reconocida</li>
+                            <li>✓ Convocatorias mensuales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Servicio de Yogurt -->
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden hover:shadow-3xl transition duration-300 flex flex-col">
+                    <img src="images/Servicio2.png" alt="Formulación de Yogurt" class="w-full h-64 object-cover" style="object-position: 50% 20%;">
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-ice-cream text-[#4d4341] text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold text-[#4d4341]">Yogurt Natural y Griego</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Fórmulas exactas para yogurt con textura cremosa, sabor equilibrado y 100% natural.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>✓ Textura cremosa perfecta</li>
+                            <li>✓ 100% ingredientes naturales</li>
+                            <li>✓ Para tu marca propia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Servicio de Gomitas -->
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden hover:shadow-3xl transition duration-300 flex flex-col">
+                    <img src="images/Servicio1.png" alt="Formulación de Gomitas" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-candy-cane text-[#4d4341] text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold text-[#4d4341]">Formulación de Gomitas</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Formulaciones exactas para elaborar gomitas con sabores variados, textura perfecta y gusto ideal.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>✓ Recetas por Ingeniero en Alimentos</li>
+                            <li>✓ Procesos optimizados</li>
+                            <li>✓ Ideal para emprendimientos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden hover:shadow-3xl transition duration-300 flex flex-col">
+                    <img src="images/AsesoriaImagen.jpeg" alt="Asesoría Técnica y Auditorías" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-clipboard-check text-[#4d4341] text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold text-[#4d4341]">Asesoría Técnica y Auditorías</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Verificación de cumplimiento de BPM, HACCP y normativas del Codex Alimentarius.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>✓ Auditorías internas</li>
+                            <li>✓ Identificación de no conformidades</li>
+                            <li>✓ Planes de acción y mejoras</li>
+                            <li>✓ Acompañamiento técnico</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden hover:shadow-3xl transition duration-300 flex flex-col">
+                    <img src="images/CapacitacionPareja.jpg" alt="Capacitaciones In-Company" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-building text-[#4d4341] text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold text-[#4d4341]">Capacitaciones In-Company</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Formación directamente en las instalaciones de tu empresa.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>✓ Fortalecimiento del equipo</li>
+                            <li>✓ Ajuste de procesos internos</li>
+                            <li>✓ Cumplimiento de estándares</li>
+                            <li>✓ Capacitación personalizada</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden hover:shadow-3xl transition duration-300 flex flex-col">
+                    <img src="images/certificaciones-empresas.png" alt="Certificaciones" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-certificate text-[#4d4341] text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold text-[#4d4341]">Certificaciones</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Apoyo en obtención de certificaciones de calidad e inocuidad alimentaria.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>✓ BPM</li>
+                            <li>✓ ISO 22000</li>
+                            <li>✓ Buenas Prácticas de Manipulación e Inocuidad Alimentaria</li>
+                            <li>✓ Gestión de Riesgos y Seguridad en Laboratorios</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden hover:shadow-3xl transition duration-300 flex flex-col">
+                    <img src="images/Auditoria.webp" alt="Auditorías" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-search text-[#4d4341] text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold text-[#4d4341]">Auditorías</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Evaluación de sistemas de gestión de calidad e inocuidad alimentaria.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>✓ Auditorías internas</li>
+                            <li>✓ Diagnóstico de cumplimiento</li>
+                            <li>✓ Plan de acción correctiva</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden hover:shadow-3xl transition duration-300 flex flex-col">
+                    <img src="images/Analsisis.jpeg" alt="Análisis de Laboratorio" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-vial text-[#4d4341] text-3xl mr-3"></i>
+                            <h3 class="text-xl font-bold text-[#4d4341]">Análisis de Laboratorio</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Servicios de análisis fisicoquímicos y microbiológicos de alimentos.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>✓ Análisis microbiológico</li>
+                            <li>✓ Análisis fisicoquímico</li>
+                            <li>✓ Vida útil de productos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Disponibles -->
+    <section id="cursos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4" style="padding-left: 2cm; padding-right: 2cm;">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#4d4341] mb-4">Material Educativo</h2>
+                <div class="w-24 h-1 bg-[#4d4341] mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Consulta nuestra oferta de capacitaciones profesionales
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+                    <div class="p-8">
+                        <div class="border-t border-gray-200 pt-6">
+                            <iframe src="pdf/CURSO DE.pdf#view=FitH" class="w-full h-[600px] rounded-lg border border-gray-300"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sabías Que - Blog -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#4d4341] mb-4">Sabías Que...</h2>
+                <div class="w-24 h-1 bg-[#4d4341] mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Datos curiosos e interesantes sobre el mundo de los alimentos
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                    <img src="images/SabiasQue1.png" alt="Sabías Que 1" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-[#4d4341] text-white text-center">
+                        <p class="font-semibold">Dato Curioso #1</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                    <img src="images/SabiasQue2.png" alt="Sabías Que 2" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-[#4d4341] text-white text-center">
+                        <p class="font-semibold">Dato Curioso #2</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                    <img src="images/SabiasQue3.png" alt="Sabías Que 3" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-[#4d4341] text-white text-center">
+                        <p class="font-semibold">Dato Curioso #3</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                    <img src="images/SabiasQue4.png" alt="Sabías Que 4" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-[#4d4341] text-white text-center">
+                        <p class="font-semibold">Dato Curioso #4</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                    <img src="images/SabiasQue5.png" alt="Sabías Que 5" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-[#4d4341] text-white text-center">
+                        <p class="font-semibold">Dato Curioso #5</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105">
+                    <img src="images/SabiasQue6.png" alt="Sabías Que 6" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-[#4d4341] text-white text-center">
+                        <p class="font-semibold">Dato Curioso #6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Educativos -->
+    <section id="videos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#4d4341] mb-4">Videos Educativos</h2>
+                <div class="w-24 h-1 bg-[#4d4341] mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Material audiovisual de capacitación en buenas prácticas alimentarias
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Video 1: Limpieza y Desinfección -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/LimpiezaDesinfección.png" alt="Limpieza y Desinfección" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-[#4d4341] mb-3">Limpieza y Desinfección en Establecimientos</h3>
+                        <p class="text-gray-600 mb-4 text-sm flex-grow">Procedimientos correctos para mantener la higiene en establecimientos alimentarios.</p>
+                        <a href="https://drive.google.com/file/d/1ZtnErPzFXTFj9Ciw-d44SzLJ_WjlbeNx/view?usp=sharing" target="_blank" class="block w-full bg-[#4d4341] hover:bg-[#3a3230] text-white text-center px-4 py-2 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-play-circle mr-2"></i>Ver Video
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 2: Manipulación de Pollo -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/PolloFresco.png" alt="Manipulación de Pollo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-[#4d4341] mb-3">Manipulación de Pollo Fresco</h3>
+                        <p class="text-gray-600 mb-4 text-sm flex-grow">Técnicas seguras para el manejo higiénico de productos avícolas.</p>
+                        <a href="https://drive.google.com/file/d/1HiVC29_3aahCunxqRPeXhzd3jKX_na4A/view?usp=sharing" target="_blank" class="block w-full bg-[#4d4341] hover:bg-[#3a3230] text-white text-center px-4 py-2 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-play-circle mr-2"></i>Ver Video
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 3: Salud e Higiene -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/SaludHigiene.png" alt="Salud e Higiene" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-[#4d4341] mb-3">Salud e Higiene en Empleados</h3>
+                        <p class="text-gray-600 mb-4 text-sm flex-grow">Requisitos de salud y prácticas higiénicas para el personal.</p>
+                        <a href="https://drive.google.com/file/d/1Niu53r0oiiiypeE2ydi9SC16-xUlf9YX/view?usp=sharing" target="_blank" class="block w-full bg-[#4d4341] hover:bg-[#3a3230] text-white text-center px-4 py-2 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-play-circle mr-2"></i>Ver Video
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 4: Manejo de Residuos -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/ManejoResiduos.png" alt="Manejo de Residuos" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-[#4d4341] mb-3">Manejo de Residuos</h3>
+                        <p class="text-gray-600 mb-4 text-sm flex-grow">Gestión adecuada de desechos en establecimientos alimentarios.</p>
+                        <a href="https://drive.google.com/file/d/1zQHKGqyTIPXMCoonJSniH_ntBoNQMRgs/view?usp=sharing" target="_blank" class="block w-full bg-[#4d4341] hover:bg-[#3a3230] text-white text-center px-4 py-2 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-play-circle mr-2"></i>Ver Video
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 5: Control de Plagas -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/ControlPlagas.png" alt="Control de Plagas" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-[#4d4341] mb-3">Control de Plagas</h3>
+                        <p class="text-gray-600 mb-4 text-sm flex-grow">Prevención y control efectivo de plagas en áreas de alimentos.</p>
+                        <a href="https://drive.google.com/file/d/1BF0SIgy8-rxiWzohGJU6Sfo5oh8a_yB1/view?usp=sharing" target="_blank" class="block w-full bg-[#4d4341] hover:bg-[#3a3230] text-white text-center px-4 py-2 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-play-circle mr-2"></i>Ver Video
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 6: Normas de Higiene -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105 flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/Higiene.webp" alt="Normas de Higiene" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-[#4d4341] mb-3">Normas de Higiene para Manipuladores</h3>
+                        <p class="text-gray-600 mb-4 text-sm flex-grow">Normativas esenciales para personal que manipula alimentos.</p>
+                        <a href="https://drive.google.com/file/d/1GRDPqbW2VzSH5F8dHSE3jQy-SMrJnYsQ/view?usp=sharing" target="_blank" class="block w-full bg-[#4d4341] hover:bg-[#3a3230] text-white text-center px-4 py-2 rounded-lg font-semibold transition duration-300">
+                            <i class="fas fa-play-circle mr-2"></i>Ver Video
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#4d4341] mb-4">¡Contáctanos!</h2>
+                <div class="w-24 h-1 bg-[#4d4341] mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    ¿Tienes preguntas? Estamos aquí para ayudarte
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-start">
+                <!-- Información de contacto -->
+                <div>
+                    <h3 class="text-2xl font-bold text-[#4d4341] mb-6">Información de Contacto</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#4d4341] text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-[#4d4341]">Dirección</h4>
+                                <p class="text-[#4d4341]">Ambato - Ecuador</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-[#4d4341] text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-[#4d4341]">Teléfono</h4>
+                                <p class="text-[#4d4341]">+593 99 842 6977</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-[#4d4341] text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-[#4d4341]">Email</h4>
+                                <p class="text-[#4d4341]">innovafoodgc21@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-[#4d4341] text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-[#4d4341]">Horario</h4>
+                                <p class="text-[#4d4341]">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                                <p class="text-[#4d4341]">Sábados: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redes Sociales -->
+                    <div class="mt-8">
+                        <h4 class="font-bold text-[#4d4341] mb-4 text-xl">Síguenos en Redes Sociales</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/share/1BaWG35Kfz/" target="_blank" class="w-12 h-12 bg-[#4d4341] text-white rounded-full flex items-center justify-center hover:bg-[#3a3230] transition duration-300">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/innovafoodg.c?igsh=MWFycm40MDl2NTRobA==" target="_blank" class="w-12 h-12 bg-[#4d4341] text-white rounded-full flex items-center justify-center hover:bg-[#3a3230] transition duration-300">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="https://wa.me/593998426977" target="_blank" class="w-12 h-12 bg-[#4d4341] text-white rounded-full flex items-center justify-center hover:bg-[#3a3230] transition duration-300">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario de contacto -->
+                <div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-[#4d4341] mb-6">Envíanos un Mensaje</h3>
+                        
+                        <div class="mb-3">
+                            <label class="block text-[#4d4341] font-semibold mb-2">Nombre Completo</label>
+                            <input type="text" id="nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#4d4341] transition-all" required>
+                            <p id="error-nombre" class="text-red-600 text-sm mt-1 hidden"></p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="block text-[#4d4341] font-semibold mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#4d4341] transition-all" required>
+                            <p id="error-email" class="text-red-600 text-sm mt-1 hidden"></p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="block text-[#4d4341] font-semibold mb-2">Teléfono</label>
+                            <input type="tel" id="telefono" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#4d4341] transition-all" required>
+                            <p id="error-telefono" class="text-red-600 text-sm mt-1 hidden"></p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="block text-[#4d4341] font-semibold mb-2">Asunto</label>
+                            <select id="asunto" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#4d4341] transition-all" required>
+                                <option value="">Seleccionar...</option>
+                                <option value="Información de cursos">Información de cursos</option>
+                                <option value="Inscripción">Inscripción</option>
+                                <option value="Consultoría">Consultoría</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                            <p id="error-asunto" class="text-red-600 text-sm mt-1 hidden"></p>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="block text-[#4d4341] font-semibold mb-2">Mensaje <span class="text-gray-400 text-sm">(Opcional)</span></label>
+                            <textarea rows="3" id="mensaje" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#4d4341] transition-all" placeholder="Escribe tu mensaje aquí..."></textarea>
+                            <p id="error-mensaje" class="text-red-600 text-sm mt-1 hidden"></p>
+                        </div>
+
+                        <button onclick="enviarWhatsApp()" type="button" class="w-full bg-[#4d4341] hover:bg-[#3a3230] text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                            <i class="fab fa-whatsapp mr-2"></i>Enviar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#4d4341] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Innova Food G.C</h3>
+                    <p class="text-gray-300 mb-4">Instituto de capacitaciones profesionales especializado en el sector alimentario.</p>
+                    <img src="images/innovaImage.png" alt="Logo" class="w-20 h-20 object-contain bg-white rounded-lg p-2">
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-300 hover:text-white transition">Inicio</a></li>
+                        <li><a href="#nosotros" class="text-gray-300 hover:text-white transition">Nosotros</a></li>
+                        <li><a href="#servicios" class="text-gray-300 hover:text-white transition">Servicios</a></li>
+                        <li><a href="#cursos" class="text-gray-300 hover:text-white transition">Material Educativo</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Servicios</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Capacitaciones</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Consultoría</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Certificaciones</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Laboratorio</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-phone mr-2"></i>+593 123 456 789</li>
+                        <li><i class="fas fa-envelope mr-2"></i>contacto@innovafoodgc.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Av. Principal 123</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2025 Innova Food G.C. Todos los derechos reservados. | Hacerlo tú mismo es mejor </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/593998426977?text=Hola%20Innova%20Food%20G.C.,%20estoy%20interesado%20en%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20y%20capacitaciones." target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all duration-300 z-50 group">
+        <i class="fab fa-whatsapp text-3xl"></i>
+        <span class="hidden group-hover:inline-block ml-2 font-semibold">Contáctanos</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
