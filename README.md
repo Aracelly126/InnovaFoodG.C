@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # InovvaFood G.C Website
 
 Este proyecto consiste en la creación de una página web para la empresa "InovvaFood G.C", que se especializa en el desarrollo de productos alimentarios innovadores. La web está diseñada para proporcionar información sobre la empresa, sus servicios y facilitar el contacto con los usuarios.
@@ -25,3 +26,6 @@ El proyecto contiene los siguientes archivos:
 ## Contacto
 
 Para más información, visita la sección de contacto en la página web o envíanos un correo electrónico a [info@inovvafoodgc.com](mailto:info@inovvafoodgc.com).
+=======
+# InnovaFoodG.C
+>>>>>>> 677e19a6692108360387639b34527c1f482e46b5
