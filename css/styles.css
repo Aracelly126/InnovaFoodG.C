@@ -181,3 +181,30 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #3a3230;
 }
+
+/* Contenedor de PDF responsive */
+.pdf-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.pdf-container iframe {
+    display: block;
+    border: 0;
+}
+
+/* Mejoras para móvil */
+@media (max-width: 768px) {
+    .pdf-container iframe {
+        min-height: 400px;
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pdf-container iframe {
+        min-height: 350px;
+        max-height: 450px;
+    }
+}
